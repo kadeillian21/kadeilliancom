@@ -1,41 +1,102 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>Peace of mind from prototype to production</p>
-</section>
+<!-- Main -->
+<div id="main">
+	<div class="inner">
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo"><strong>Kade Illian</strong></a>
+			<ul class="icons">
+				<li><a href="https://github.com/kadeillian21" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+				<li><a href="https://www.linkedin.com/in/kade-illian/" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="mailto:kadeillianmt@gmail.com" class="icon solid fa-envelope"><span
+							class="label">Email</span></a></li>
+			</ul>
+		</header>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.6/CHANGELOG.md">v1.6 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://web.libera.chat/#elixir">#elixir on Libera Chat (IRC)</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-      <li>
-        <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
-      </li>
-      <li>
-        <a href="https://discord.gg/elixir">Elixir on Discord</a>
-      </li>
-    </ul>
-  </article>
-</section>
+<!-- Banner -->
+    <section id="banner">
+      <div class="content">
+        <header>
+          <h1>Hi, I'm <br>Kade Illian</h1>
+          <p>A Ruby on Rails Developer Based out of Bozeman, MT</p>
+        </header>
+        <p>I became interested in computer science during my freshman year of high school and competed at the
+          district level in an academic Java competition. Throughout high school, my love of problem solving and working inside of a team grew.  Whether it was being a lead server at Cracker Barrel or creating a widely successful student section for our football team, I loved figuring out how to motivate people to become as passionate as I was about the task at hand.  After moving to Montana with the intention of taking a gap year before attending college, I realized that my passion lay within the wide world of web development.  In March of 2022, I began to teach myself basic HTML and CSS. Then in July of 2022, I took the first major step toward my career in web development: attending Actualize Bootcamp.  Here, I learned the basics of Ruby on Rails, JavaScript, React.js, SQL, Git, Github, and more.  With this newly aquired knowledge, I have been able to create <a href="">projects</a> such as this website.  My career as a web developer is only just beginning, but I hope to show you some of what I have learned through this site!</p>
+      </div>
+      <span class="image object">
+        <%= img_tag "/images/kade-illian.jpg" %>
+      </span>
+    </section>
+    <hr class="major">
+    <!-- Section -->
+    <section>
+      <header class="major">
+        <h2>Technologies</h2>
+      </header>
+      <div class="features">
+        <article>
+          <span class="icon fa-gem"></span>
+          <div class="content">
+            <h3>Ruby</h3>
+            <p>Ruby is an OOP language developed by Yukihiro Matsumoto.  This is the first language that Actualize introduces to its students because of its english-like syntax and its strong reliance upon object oriented programming.  Ruby pairs with the Rails framework, allowing developers the ability to create powerful web applications.  I have used Ruby in conjunction with Rails, to build a to-do list appliation, to create web-scrappers, and much more.</p>
+          </div>
+        </article>
+        <article>
+          <span class="icon solid fa-train"></span>
+          <div class="content">
+            <h3>Rails</h3>
+            <p>Rails is a Ruby based framework that allows developers to easily create full-stack websites.  Rails is based on the concept of "convention over configuration", meaning that a developer should utilize Rails in the way that it was designed to be used.  This was one of my biggest challenges while creating this website, but once you understand this fundamental concept, Rails becomes an immensly powerful framework, allowing you to deploy fully functioning RESTful websites in a relatively short amount of time.</p>
+          </div>
+        </article>
+        <article>
+          <span class="icon brands fa-js"></span>
+          <div class="content">
+            <h3>JavaScript</h3>
+            <p>JavaScript is the world's most popular programming language in 2022.  JavaScript gives developers access to cookies, dynamic web pages, user input, and many more fluid web elements.</p>
+          </div>
+        </article>
+        <article>
+          <span class="icon brands fa-react"></span>
+          <div class="content">
+            <h3>React</h3>
+            <p>React is a JavaScript framework that allows developers to create "single-page web applications".  As web applications continue to move towards the single-page model, React gains more and more popularity.  In 2022 it is widely considered to be the most widely used JavaScript framework.</p>
+          </div>
+        </article>
+        <article>
+          <span class="icon brands fa-html5"></span>
+          <div class="content">
+            <h3>HTML/CSS</h3>
+            <p>HTML is the language that gives structure to web pages today.  In Rails, embedded Ruby is converted into HTML before it is displayed to the user on the front-end.  HTML on its own can be fairly bland and uninteresting for the modern internet user.  This is where CSS comes in as a styling language to gives us the colors, margins, image stylings, and much, much more.</p>
+          </div>
+        </article>
+        <article>
+          <span class="icon brands fa-git"></span>
+          <div class="content">
+            <h3>Git</h3>
+            <p>Git is a version control system that is widely used in the web development world today.  Writing thoughtful, concise Git messages is an essential part of working on the modern software team.  By effectively communicating what you have changed in the code base through your commit messages, a developer can help his coworkers and his or herself by being able to pinpoint where a bug may have been introduced into the application.</p>
+          </div>
+        </article>
+      </div>
+      <a href="/resources" class="button big">Learn More</a>
+    </section>
+    <hr class="major">
+    <!-- Section -->
+    <section>
+      <header class="major">
+        <h2>What I am Learning</h2>
+      </header>
+      <div class="posts">
+        <article class="blog">
+          <p>A blog goes here</p>
+        </article>
+        <article class="blog">
+          <p>A blog goes here</p>
+        </article>
+        <article class="blog">
+          <p>A blog goes here</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</div>

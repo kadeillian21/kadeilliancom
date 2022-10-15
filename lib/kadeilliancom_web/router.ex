@@ -18,6 +18,8 @@ defmodule KadeilliancomWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/projects", PageController, :projects
+    get "/resources", PageController, :resources
   end
 
   # Other scopes may use custom stacks.
