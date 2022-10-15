@@ -1,0 +1,13 @@
+<!-- Content -->
+<section>
+  <header class="center" id="blogheader">
+    <h1><%= @blog.title %></h1>
+  </header>
+  <p class="center">Published on: <%= @blog.inserted_at %></p>
+  <p class="center">    
+    <%= img_tag @blog.image_url, class: "blog-image" %>
+  </p>
+  <p>
+    <%= @blog.body %>
+  </p>
+</section>

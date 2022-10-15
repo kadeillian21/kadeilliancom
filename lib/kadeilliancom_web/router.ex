@@ -20,6 +20,8 @@ defmodule KadeilliancomWeb.Router do
     get "/", PageController, :index
     get "/projects", PageController, :projects
     get "/resources", PageController, :resources
+    resources "/blogs", BlogController
+    get "/blog", BlogController, :home
   end
 
   # Other scopes may use custom stacks.
