@@ -1,30 +1,69 @@
 <!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="csrf-token" content={csrf_token_value()}>
-    <%= live_title_tag assigns[:page_title] || "Kadeilliancom", suffix: " · Phoenix Framework" %>
+    <title>Kade Illian</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
-    <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
+
   </head>
-  <body>
-    <header>
-      <section class="container">
-        <nav>
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-            <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
-              <li><%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home) %></li>
-            <% end %>
-          </ul>
-        </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
-    <%= @inner_content %>
+
+  <body class="is-preload">
+	<!-- Wrapper -->
+    <div id="wrapper">
+
+      <%= @inner_content %>
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="">Homepage</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Resources</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Contact Me</h2>
+            </header>
+            <ul class="contact">
+              <li class="icon solid fa-envelope"><a href="mailto:kadeillianmt@gmail.com">kadeillianmt@gmail.com</a></li>
+              <li class="icon solid fa-phone">(406) 920-9593</li>
+              <li class="icon solid fa-home">1873 Buckrake Avenue<br />
+                Bozeman, MT 59718</li>
+            </ul>
+            <p>You can contact me via any of the methods above, or you can reach out to me through the Github or LinkedIn
+              icons in the top-right portion of this page. I am generally available for a call between 3p.m. and 8p.m.
+              MST.
+            </p>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a
+                href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+              	<!-- Scripts -->
+
   </body>
 </html>
+
